@@ -1,3 +1,3 @@
-// build time:Sat Apr 11 2020 20:51:58 GMT+0800 (GMT+08:00)
+// build time:Sat Apr 11 2020 20:57:09 GMT+0800 (GMT+08:00)
 var a_idx=0;jQuery(document).ready(function(a){a("body").click(function(e){var n=new Array("��ǿ","����","����","��г","����","ƽ��","����","����","����","��ҵ","����","����");var o=a("<span/>").text(n[a_idx]);var t=e.pageX,i=e.pageY;o.css({"z-index":99999,top:i-28,left:t-n[a_idx].length*8,position:"absolute",color:"#ff7a45"});a("body").append(o);o.animate({top:i-180,opacity:0},1500,function(){o.remove()});a_idx=(a_idx+1)%n.length})});
 //rebuild by neat 
