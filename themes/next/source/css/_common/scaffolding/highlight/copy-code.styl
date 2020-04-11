@@ -1,0 +1,85 @@
+.highlight-container {
+  position: relative;
+}
+
+.highlight-container:hover .copy-btn, .highlight-container .copy-btn:focus {
+  opacity: 1;
+}
+
+.copy-btn {
+  color: $black-dim;
+  cursor: pointer;
+  line-height: 1.6;
+  opacity: 0;
+  padding: 2px 6px;
+  position: absolute;
+  the-transition();
+
+  if (hexo-config('codeblock.copy_button.style') == 'flat') {
+    background: white;
+    border: 0;
+    font-size: $font-size-smaller;
+    right: 0;
+    top: 0;
+  } else if (hexo-config('codeblock.copy_button.style') == 'mac') {
+    color: white;
+    font-size: 14px;
+    right: 0;
+    top: 2px;
+  } else {
+    background-color: $gainsboro;
+    background-image: linear-gradient(#fcfcfc, $gainsboro);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    font-size: $font-size-smaller;
+    right: 4px;
+    top: 8px;
+  }
+}
+
+if (hexo-config('codeblock.copy_button.style') == 'mac') {
+  .highlight-container {
+    background: #000000;
+    border-radius: 5px;
+    padding-top: 33px;
+    position: relative;
+    box-shadow: 18px 18px 15px 0px rgba(0, 0, 0, 0);
+    margin: 35px 0;
+    margin-top: 10px;
+    margin-bottom: 28px;
+
+    ::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {  /*滚动条框*/
+      -webkit-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {  /*滚动条里面小方块*/
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 10px rgba(150, 150, 150, 0.5);
+    }
+
+    &::before {
+      background: #fc625d;
+      border-radius: 50%;
+      box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+      content: ' ';
+      height: 12px;
+      left: 16px;
+      margin-top: -22px;
+      position: absolute;
+      width: 12px;
+    }
+
+    .highlight {
+      border-radius: 0 0 5px 5px;
+
+      .table-container {
+         border-bottom-left-radius: 5px;
+      }
+    }   
+  }
+}
