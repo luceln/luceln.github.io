@@ -1,5 +1,10 @@
 ---
 title: 使用 UnblockNeteaseMusic 解锁网易云音乐
+tags:
+- 网易云音乐
+- 软件食用
+categories:
+- 软件食用
 abbrlink: 9be0780d
 ---
 

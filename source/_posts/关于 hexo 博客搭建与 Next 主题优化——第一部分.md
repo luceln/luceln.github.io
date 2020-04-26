@@ -1,5 +1,12 @@
 ---
 title: 关于 hexo 博客搭建与 Next 主题优化——第一部分
+tags:
+- hexo
+- Next
+categories:
+- 博客
+- hexo
+- Next
 abbrlink: aa2b6a17
 ---
 
